@@ -1,5 +1,6 @@
 #Things of note
 #① Always be extremely careful manually copying down/converting things like the starting box state in this question
+#② If I was to come back to this, I would make it much more readable and understandable by defining variables when referencing commandList and startList
 
 f = open("input.txt", "r")
 commandList = []
