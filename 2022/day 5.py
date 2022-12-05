@@ -49,8 +49,6 @@ def PartTwo():
     while len(commandList) >= 3:
         counter = -int(commandList[0])
         
-        tempList = []
-        
         while counter < 0:
             #print("moving",-counter,"from",commandList[1],"to",commandList[2])
             #print("appending",startList[int(commandList[1])-1][counter],"to",startList[int(commandList[2])-1])
