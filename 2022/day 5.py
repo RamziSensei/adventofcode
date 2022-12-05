@@ -3,7 +3,6 @@
 #② If I was to come back to this, I would make it much more readable and understandable by defining variables when referencing commandList and startList
 
 f = open("input.txt", "r")
-commandList = []
 
 """
     [M]             [Z]     [V]    
@@ -31,6 +30,12 @@ startList = [
 
 def PartOne():
     #Checks first 3 numbers of list for relevant commands, carries them out on startList, deletes those 3 commands and moves on to the next until the list contains less than 3 values, in this case empty
+    commandList = []
+    for i in f:
+        commandList.append(i.split()[1])
+        commandList.append(i.split()[3])
+        commandList.append(i.split()[5])
+
     while len(commandList) >= 3:
         
         for i in range(int(commandList[0])):
@@ -39,6 +44,7 @@ def PartOne():
         commandList = commandList[3:]
 
 def PartTwo():
+    commandList = []
     #CommandList[moveAmount, to, from]
     for i in f:
         commandList.append(i.split()[1])
