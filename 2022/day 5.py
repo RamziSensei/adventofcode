@@ -4,7 +4,6 @@
 
 f = open("input.txt", "r")
 commandList = []
-tempListTwo =[]
 
 """
     [M]             [Z]     [V]    
